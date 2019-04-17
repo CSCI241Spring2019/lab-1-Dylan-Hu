@@ -1,0 +1,967 @@
+Script started on Thu 11 Apr 2019 10:09:18 AM PDT
+huntsmd@CF165-02:~$ [Khuntsmd@CF165-02:~$ mkdir scsi[K[K[K[Kcsci241
+huntsmd@CF165-02:~$ cd csci241
+huntsmd@CF165-02:~/csci241$ git clone ^V[K[K https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+Cloning into 'lab-1-Dylan-Hu'...
+remote: Enumerating objects: 8, done.[K
+remote: Counting objects:  12% (1/8)   [Kremote: Counting objects:  25% (2/8)   [Kremote: Counting objects:  37% (3/8)   [Kremote: Counting objects:  50% (4/8)   [Kremote: Counting objects:  62% (5/8)   [Kremote: Counting objects:  75% (6/8)   [Kremote: Counting objects:  87% (7/8)   [Kremote: Counting objects: 100% (8/8)   [Kremote: Counting objects: 100% (8/8), done.[K
+remote: Compressing objects:  25% (1/4)   [Kremote: Compressing objects:  50% (2/4)   [Kremote: Compressing objects:  75% (3/4)   [Kremote: Compressing objects: 100% (4/4)   [Kremote: Compressing objects: 100% (4/4), done.[K
+remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0[K
+Unpacking objects:  12% (1/8)   Unpacking objects:  25% (2/8)   Unpacking objects:  37% (3/8)   Unpacking objects:  50% (4/8)   Unpacking objects:  62% (5/8)   Unpacking objects:  75% (6/8)   Unpacking objects:  87% (7/8)   Unpacking objects: 100% (8/8)   Unpacking objects: 100% (8/8), done.
+Checking connectivity... done.
+huntsmd@CF165-02:~/csci241$ 1s
+1s: command not found
+huntsmd@CF165-02:~/csci241$ ls
+lab-1-Dylan-Hu
+huntsmd@CF165-02:~/csci241$ git config --global user.name "Dylan Huntsman"
+huntsmd@CF165-02:~/csci241$ git config --global user.email huntsmd@wwu.edu
+huntsmd@CF165-02:~/csci241$ touch writeup.txt
+huntsmd@CF165-02:~/csci241$ git add writeup.txt
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+huntsmd@CF165-02:~/csci241$ git init
+Initialized empty Git repository in /home/huntsmd/csci241/.git/
+huntsmd@CF165-02:~/csci241$ git add writeup.txt
+huntsmd@CF165-02:~/csci241$ git commit -m 
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+huntsmd@CF165-02:~/csci241$ git commit -m "Added empty writeup"
+[master (root-commit) 4ec28a9] Added empty writeup
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+huntsmd@CF165-02:~/csci241$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+huntsmd@CF165-02:~/csci241$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+huntsmd@CF165-02:~/csci241$ git push https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu master
+
+huntsmd@CF165-02:~/csci241$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+huntsmd@CF165-02:~/csci241$ git config --global push.da[Kefault simple
+huntsmd@CF165-02:~/csci241$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+huntsmd@CF165-02:~/csci241$ git push ^V[K[K https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu master
+
+huntsmd@CF165-02:~/csci241$ git push https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgit push --set [K0[K-upstream https://github.com/CSCI241Spring2019/lab-1-Dylan- Hu master
+Username for 'https://github.com': 
+Password for 'https://github.com': 
+remote: Anonymous access to CSCI241Spring2019/lab-1-Dylan-Hu.git denied.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu/'
+huntsmd@CF165-02:~/csci241$ cd lab [K-1-Dylan0[K[K[K[K[K[K<Dylan-Hu>
+bash: syntax error near unexpected token `newline'
+huntsmd@CF165-02:~/csci241$ cd lab-1-Dylan-HU[Kui[K
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ touch writeup.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git add writeup.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit -m "add[K[K[KAdded empty writeup attempt #2)[K"
+[master 4610b31] Added empty writeup attempt #2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan-Hu
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 327 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   1523c09..4610b31  master -> master
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git add writeup.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit -m"Added part 1 (Dylan Huntsman) to writeup"
+[master 32506be] Added part 1 (Dylan Huntsman) to writeup
+ 1 file changed, 1 insertion(+)
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git a[Kstatus
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   writeup.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	[31mmodified:   writeup.txt[m
+
+no changes added to commit
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit -m "Added part 2 to writeup"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	[31mmodified:   writeup.txt[m
+
+no changes added to commit
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan. -Hu
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 282 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   4610b31..32506be  master -> master
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ s[Kgit sttatu[K[K[K[Katus
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   writeup.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git add writeup.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ giet commit -m "Added part 2 (hobby) to writeup"[1P
+[master 7f2aecc] Added part 2 (hobby) to writeup
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan-Hu
+Password for 'https://Dylan-Hu@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git/'
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan-Hu
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 303 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   32506be..7f2aecc  master -> master
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ touch username.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git add username.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit -m "Added username.txt"
+[master 34b2e17] Added username.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 username.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ dyla[K[K[K[Kgit push
+Username for 'https://github.com': dy  Dylan-Hu
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 350 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   7f2aecc..34b2e17  master -> master
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git checkout
+M	username.txt
+Your branch is up-to-date with 'origin/master'.
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git reset
+Unstaged changes after reset:
+M	username.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git blame
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git nbl[K[K[Kblame usner[K[K[Kername.txt
+[?1h=00000000 (Not Committed Yet 2019-04-11 10:57:29 -0700 1) Dylan Huntsman,huntsmd,Dylan-Hu[m
+[K[?1l>huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git touch dummy.txt
+git: 'touch' is not a git command. See 'git --help'.
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git add dummy.txt
+fatal: pathspec 'dummy.txt' did not match any files
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ touch dummy.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git add dummy.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit -m "Dummy file for deletion"
+[master 9d729a4] Dummy file for deletion
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dummy.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan-HU u
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 275 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   34b2e17..9d729a4  master -> master
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git rm dummy.txt
+rm 'dummy.txt'
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;67r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[67;1H"~/csci241/lab-1-Dylan-Hu/.git/COMMIT_EDITMSG" 12L, 322C[>c[27m[23m[m[H[2J[2;1H[96m# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch [m[38;5;224mmaster[m
+[96m# Your branch is up-to-date with '[m[38;5;224morigin/master[m[96m'.
+#
+# [m[38;5;81mChanges to be committed:[m
+[96m#       [m[38;5;121mdeleted[m[96m: [m[95m   dummy.txt[m
+[96m#
+# [m[38;5;81mChanges not staged for commit:[m
+[96m#       [m[38;5;121mmodified[m[96m: [m[95m  username.txt[m
+[96m#[m
+[94m~                                                                                                    [14;1H~                                                                                                    [15;1H~                                                                                                    [16;1H~                                                                                                    [17;1H~                                                                                                    [18;1H~                                                                                                    [19;1H~                                                                                                    [20;1H~                                                                                                    [21;1H~                                                                                                    [22;1H~                                                                                                    [23;1H~                                                                                                    [24;1H~                                                                                                    [25;1H~                                                                                                    [26;1H~                                                                                                    [27;1H~                                                                                                    [28;1H~                                                                                                    [29;1H~                                                                                                    [30;1H~                                                                                                    [31;1H~                                                                                                    [32;1H~                                                                                                    [33;1H~                                                                                                    [34;1H~                                                                                                    [35;1H~                                                                                                    [36;1H~                                                                                                    [37;1H~                                                                                                    [38;1H~                                                                                                    [39;1H~                                                                                                    [40;1H~                                                                                                    [41;1H~                                                                                                    [42;1H~                                                                                                    [43;1H~                                                                                                    [44;1H~                                                                                                    [45;1H~                                                                                                    [46;1H~                                                                                                    [47;1H~                                                                                                    [48;1H~                                                                                                    [49;1H~                                                                                                    [50;1H~                                                                                                    [51;1H~                                                                                                    [52;1H~                                                                                                    [53;1H~                                                                                                    [54;1H~                                                                                                    [55;1H~                                                                                                    [56;1H~                                                                                                    [57;1H~                                                                                                    [58;1H~                                                                                                    [59;1H~                                                                                                    [60;1H~                                                                                                    [61;1H~                                                                                                    [62;1H~                                                                                                    [63;1H~                                                                                                    [64;1H~                                                                                                    [65;1H~                                                                                                    [66;1H~                                                                                                    [m[67;84H1,0-1[9CAll"~/csci241/lab-1-Dylan-Hu/.git/COMMIT_EDITMSG" 12L, 322C[27C     [9C   [1;1H]2;COMMIT_EDITMSG (~/csci241/lab-1-Dylan-Hu/.git) - VIM]1;COMMIT_EDITMSG[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[67;84H2,1[11CAll[2;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H1,0-1[1;1H[?12l[?25h[?25l[67;84H2,1  [2;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H1,0-1[1;1H[?12l[?25h[?25l[67;84H2,1  [2;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H1,0-1[1;1H[?12l[?25h[?25l[67;84H2,1  [2;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H1,0-1[1;1H[?12l[?25h[?25l[67;84H2,1  [2;1H[?12l[?25h[?25l[67;84H1,0-1[1;1H[?12l[?25h[?25l[67;84H2,1  [2;1H[?12l[?25h[?25l[67;84H1,0-1[1;1H[?12l[?25h[?25l[67;84H2,1  [2;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H1,0-1[1;1H[?12l[?25h[?25l[67;84H2,1  [2;1H[?12l[?25h[?25l[67;86H2[2;2H[?12l[?25h[?25l[3;66r[3;1H[L[1;67r[2;3H[K[3;1H[96m#Please enter the commit message for your changes. Lines starting[m[67;1H[K[67;84H2,2[11CAll]2;COMMIT_EDITMSG + (~/csci241/lab-1-Dylan-Hu/.git) - VIM]1;COMMIT_EDITMSG[2;2H[?12l[?25h[?25l[3;66r[3;1H[L[1;67r[3;1H[96m#[m[67;84H[K[67;84H2,2[11CAll[2;2H[?12l[?25h[?25l[3;66r[3;1H[L[1;67r[3;1H[96m#[m[67;84H[K[67;84H2,2[11CAll[2;2H[?12l[?25h[?25l[3;66r[3;1H[L[1;67r[3;1H[96m#[m[67;84H[K[67;84H2,2[11CAll[2;2H[?12l[?25h[?25l[3;66r[3;1H[L[1;67r[3;1H[96m#[m[67;84H[K[67;84H2,2[11CAll[2;2H[?12l[?25h[?25l[3;66r[3;1H[L[1;67r[3;1H[96m#[m[67;84H[K[67;84H2,2[11CAll[2;2H[?12l[?25h[?25l[67;86H1[2;1H[?12l[?25h[?25l [2;2H[K[2;1H[?12l[?25h[?25l[67;86H0-1[2;1H[?12l[?25h[?25l[67;84H3,1  [3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[67;85H3[13;1H[?12l[?25h[?25l[67;85H2[12;1H[?12l[?25h[?25l[12;1H[K[67;87H0-1[12;1H[?12l[?25h[?25l[67;85H3,1  [13;1H[?12l[?25h[?25l[67;87H2[13;2H[?12l[?25h[?25l[67;87H1[13;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H1,49 [11;49H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H3,1  [13;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H8[18;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H3[13;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H1,1  [11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H3,1  [13;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;1H[97m[41mE348: No string under cursor[m[67;84H[K[67;84H12,0-1[8CAll[12;1H[?12l[?25h[?25l[67;84H[K[67;84H12,0-1[8CAll[12;1H[?12l[?25h[?25l[67;84H[K[67;84H12,0-1[8CAll[12;1H[?12l[?25h[?25l[67;85H3,1  [13;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H3[13;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H8[18;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H3[13;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H1,1  [11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2,0-1[2;1H[?12l[?25h[?25l[67;84H1[1;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H3,1  [3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H3,1  [13;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H8[18;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H3[13;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H1,1  [11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2,0-1[2;1H[?12l[?25h[?25l[67;84H1[1;1H[?12l[?25h[27m[23m[m[H[2J[?25l[3;1H[96m#
+#
+#
+#
+#
+#Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch [m[38;5;224mmaster[m
+[96m# Your branch is up-to-date with '[m[38;5;224morigin/master[m[96m'.
+
+# [m[38;5;81mChanges to be committed:[m
+[96m#       [m[38;5;121mdeleted[m[96m: [m[95m   dummy.txt[m
+[96m#
+# [m[38;5;81mChanges not staged for commit:[m
+[96m#       [m[38;5;121mmodified[m[96m: [m[95m  username.txt[m
+[96m#[m
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [25;1H~                                                                               [26;1H~                                                                               [27;1H~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [38;1H~                                                                               [39;1H~                                                                               [40;1H~                                                                               [41;1H~                                                                               [42;1H~                                                                               [43;1H~                                                                               [44;1H~                                                                               [45;1H~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [51;1H~                                                                               [52;1H~                                                                               [53;1H~                                                                               [54;1H~                                                                               [55;1H~                                                                               [56;1H~                                                                               [57;1H~                                                                               [58;1H~                                                                               [59;1H~                                                                               [60;1H~                                                                               [61;1H~                                                                               [62;1H~                                                                               [63;1H~                                                                               [64;1H~                                                                               [65;1H~                                                                               [66;1H~                                                                               [m[67;63H1,0-1[9CAll[1;1H[?12l[?25h[27m[23m[m[H[2J[?25l[3;1H[96m#
+#
+#
+#
+#
+#Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch [m[38;5;224mmaster[m
+[96m# Your branch is up-to-date with '[m[38;5;224morigin/master[m[96m'.
+
+# [m[38;5;81mChanges to be committed:[m
+[96m#       [m[38;5;121mdeleted[m[96m: [m[95m   dummy.txt[m
+[96m#
+# [m[38;5;81mChanges not staged for commit:[m
+[96m#       [m[38;5;121mmodified[m[96m: [m[95m  username.txt[m
+[96m#[m
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [25;1H~                                                                               [26;1H~                                                                               [27;1H~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [38;1H~                                                                               [39;1H~                                                                               [40;1H~                                                                               [41;1H~                                                                               [42;1H~                                                                               [43;1H~                                                                               [44;1H~                                                                               [45;1H~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [51;1H~                                                                               [52;1H~                                                                               [53;1H~                                                                               [54;1H~                                                                               [55;1H~                                                                               [56;1H~                                                                               [57;1H~                                                                               [58;1H~                                                                               [59;1H~                                                                               [60;1H~                                                                               [61;1H~                                                                               [62;1H~                                                                               [63;1H~                                                                               [64;1H~                                                                               [65;1H~                                                                               [66;1H~                                                                               [m[67;63H1,0-1[9CAll[1;1H[?12l[?25h[27m[23m[m[H[2J[?25l[3;1H[96m#
+#
+#
+#
+#
+#Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch [m[38;5;224mmaster[m
+[96m# Your branch is up-to-date with '[m[38;5;224morigin/master[m[96m'.
+
+# [m[38;5;81mChanges to be committed:[m
+[96m#       [m[38;5;121mdeleted[m[96m: [m[95m   dummy.txt[m
+[96m#
+# [m[38;5;81mChanges not staged for commit:[m
+[96m#       [m[38;5;121mmodified[m[96m: [m[95m  username.txt[m
+[96m#[m
+[94m~                                                                                                    [20;1H~                                                                                                    [21;1H~                                                                                                    [22;1H~                                                                                                    [23;1H~                                                                                                    [24;1H~                                                                                                    [25;1H~                                                                                                    [26;1H~                                                                                                    [27;1H~                                                                                                    [28;1H~                                                                                                    [29;1H~                                                                                                    [30;1H~                                                                                                    [31;1H~                                                                                                    [32;1H~                                                                                                    [33;1H~                                                                                                    [34;1H~                                                                                                    [35;1H~                                                                                                    [36;1H~                                                                                                    [37;1H~                                                                                                    [38;1H~                                                                                                    [39;1H~                                                                                                    [40;1H~                                                                                                    [41;1H~                                                                                                    [42;1H~                                                                                                    [43;1H~                                                                                                    [44;1H~                                                                                                    [45;1H~                                                                                                    [46;1H~                                                                                                    [47;1H~                                                                                                    [48;1H~                                                                                                    [49;1H~                                                                                                    [50;1H~                                                                                                    [51;1H~                                                                                                    [52;1H~                                                                                                    [53;1H~                                                                                                    [54;1H~                                                                                                    [55;1H~                                                                                                    [56;1H~                                                                                                    [57;1H~                                                                                                    [58;1H~                                                                                                    [59;1H~                                                                                                    [60;1H~                                                                                                    [61;1H~                                                                                                    [62;1H~                                                                                                    [63;1H~                                                                                                    [64;1H~                                                                                                    [65;1H~                                                                                                    [66;1H~                                                                                                    [m[67;84H1,0-1[9CAll[1;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H3,1  [3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H3,1  [13;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H8[18;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H3[13;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H1,1  [11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2,0-1[2;1H[?12l[?25h[?25l[67;84H1[1;1H[?12l[?25h[?25l[67;84H2[2;1H[?12l[?25h[?25l[67;84H3,1  [3;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H9[9;1H[?12l[?25h[?25l[67;84H10,1[10;1H[?12l[?25h[?25l[67;85H1[11;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H3,1  [13;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H8[18;1H[?12l[?25h[?25l[67;85H7[17;1H[?12l[?25h[?25l[67;85H6[16;1H[?12l[?25h[?25l[67;85H5[15;1H[?12l[?25h[?25l[67;85H4[14;1H[?12l[?25h[?25l[67;85H3[13;1H[?12l[?25h[?25l[67;85H2,0-1[12;1H[?12l[?25h[?25l[67;85H1,1  [11;1H[?12l[?25h[?25l[67;85H0[10;1H[?12l[?25h[?25l[67;84H9,1 [9;1H[?12l[?25h[?25l[67;84H8[8;1H[?12l[?25h[?25l[67;84H7[7;1H[?12l[?25h[?25l[67;84H6[6;1H[?12l[?25h[?25l[67;84H5[5;1H[?12l[?25h[?25l[67;84H4[4;1H[?12l[?25h[?25l[67;84H3[3;1H[?12l[?25h[?25l[67;84H2,0-1[2;1H[?12l[?25h[?25l[67;84H1[1;1H[?12l[?25h[?25l[67;84H[K[67;1H:]2;[Command Line] (~/csci241/lab-1-Dylan-Hu) - VIM]1;[Command Line][58;1H[7m.git/COMMIT_EDITMSG [+]                                                            1,0-1          All[m[59;1H[94m:[m[59;2H[K[60;1H[94m:
+:
+:
+:
+:
+:[60;2H~
+:~
+:~
+:~
+:~
+:~[m
+[1m[7m[Command Line]                                                                     1,0-1          All[59;2H[?12l[?25h[?25l[m[67;1H[1mrecording @Q[59;2H[?12l[?25h[?25l[m[67;1H[K[59;2H[?12l[?25h[?25l[67;1H:[?12l[?25hQ[?25l[?12l[?25h[?25l[97m[41mE492: Not an editor command: Q[59;2H[?12l[?25h[?25l[67;2H11: Invalid in command-line window; <CR> executes, CTRL-C quits[59;2H[?12l[?25h]2;COMMIT_EDITMSG + (~/csci241/lab-1-Dylan-Hu/.git) - VIM]1;COMMIT_EDITMSG[67;1H[?25l[m[58;1H[94m~                                                                                                    [59;1H~                                                                                                    [60;1H~  
+~  
+~  
+~  
+~  
+~  
+~                                                                                                    [m[67;84H1,0-1[9CAll[1;1H[?12l[?25h[?25l[67;1HEntering Ex mode.  Type "visual" to go to Normal mode.[67;55H[K[?12l[?25h[67;1H
+:q[67;2H[K[67;2Htest
+[?25l[97m[41mE492: Not an editor command: test[?12l[?25h[m
+:[27m[23m[m[H[2J[27m[23m[m[H[2J[27m[23m[m[H[2J[27m[23m[m[H[2J[27m[23m[m[H[2J[67;1H:Q
+[?25l[97m[41mE492: Not an editor command: :Q[?12l[?25h[m
+::q
+[?25l[97m[41mE37: No write since last change (add ! to override)[?12l[?25h[m
+:Q[67;2H[K[67;2Hq
+[?25l[97m[41mE37: No write since last change (add ! to override)[?12l[?25h[m
+:q!
+]2;Terminal]1;Terminal[?1l>[?1049lerror: There was a problem with the editor 'editor'.
+Please supply the message using either -m or -F option.
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ commit [K[K[K[K[K[K[Kgit commit  -[K[K-m "D[K[K[K[K[K[K[K[K[K[K[K[Kpsh -m "Help[K[K[K[Kdie phone[K[K[K[K[K[K[K[Kie dummy[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kush 0m[K[K0[K-m "Go w[Kaway"
+error: unknown switch `m'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    --delete              delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit - [Km "go away dummy file"
+[master ff0c18a] go away dummy file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 dummy.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan-Hu
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 229 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   9d729a4..ff0c18a  master -> master
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git checkout -b question[K[K[K[K[Kstion 3
+fatal: Cannot update paths and switch to branch 'question' at the same time.
+Did you intend to checkout '3' which can not be resolved as commit?
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git chekcou[K[K[K[Kckout -b question3
+M	username.txt
+Switched to a new branch 'question3'
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git add writeup.txt
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git commit writeup.txt "[K[K[Kt~~[K[K[K[K[K[K[K[K[K[K[K[K[K-m "Added question 3"
+[question3 1d2f13f] Added question 3
+ 1 file changed, 1 insertion(+)
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git checkout master
+M	username.txt
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git merge question3
+Updating ff0c18a..1d2f13f
+Fast-forward
+ writeup.txt | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan-Hu
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 335 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   ff0c18a..1d2f13f  master -> master
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git branch - [Kd question3
+Deleted branch question3 (was 1d2f13f).
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ gradle bi[Kuild
+[0m
+Welcome to Gradle 5.0!
+
+Here are the highlights of this release:
+ - Kotlin DSL 1.0
+ - Task timeouts
+ - Dependency alignment aka BOM support
+ - Interactive `gradle init`
+
+For more details see https://docs.gradle.org/5.0/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+
+[2A[1B[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[0K[35D[1B[1m> Loading projects[m[0K[18D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Compiling /home/huntsmd/csci241/lab-1-Dylan-Hu/build.gradle into local compilation [m[100D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Compiling /home/huntsmd/csci241/lab-1-Dylan-Hu/build.gradle into local compilation [m[100D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[0K[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [1s][m[34D[1B[1m> :startScripts[m[15D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [1s][m[34D[1B[1m> :startScripts[m[15D[1B[2A[0K
+[32;1mBUILD SUCCESSFUL[0;39m in 3s
+5 actionable tasks: 5 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :startScripts[m[15D[1B[2A[2K[1B[2K[1A[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ gradle run
+[0m
+
+[1A[1m> Connecting to Daemon[m[22D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[0K
+[1m> Task :run[m
+Hello World!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ gradle run --args="H[KHow d[Kdo you turn this on"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[31;1m> Task :compileJava[0;39m[31m FAILED[39m
+/home/huntsmd/csci241/lab-1-Dylan-Hu/src/main/java/lab1/Hello.java:5: error: bad operand type String[] for unary operator '--'
+        System.out.println(--args);
+                           ^
+1 error
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+[33m> [39mCompilation failed; see the compiler error output for details.
+
+* Try:
+Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ gradle run --args="How do you turn this on"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[1m> Task :run[m[0K
+[Ljava.lang.String;@4aa298b7
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[0K[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ gradle run
+[0m
+
+[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello World!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git mv
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ giv[Kt mv writue[K[Keupt[K.txt
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git diff
+[?1h=[1mdiff --git a/username.txt b/username.txt[m[m
+[1mindex e69de29..555c7e1 100644[m[m
+[1m--- a/username.txt[m[m
+[1m+++ b/username.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mDylan Huntsman,huntsmd,Dylan-Hu[m[m
+[K[?1l>huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git diff
+[?1h=[1mdiff --git a/username.txt b/username.txt[m[m
+[1mindex e69de29..555c7e1 100644[m[m
+[1m--- a/username.txt[m[m
+[1m+++ b/username.txt[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mDylan Huntsman,huntsmd,Dylan-Hu[m[m
+[K[?1l>huntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ git diffmv writeup.txt[Kradle run --args="How do you turn this on"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"D"y"l"a"n"
+[0m
+[1A
+[31;1m> Task :compileJava[0;39m[31m FAILED[39m
+/home/huntsmd/csci241/lab-1-Dylan-Hu/src/main/java/lab1/Hello.java:5: error: cannot find symbol
+        System.out.println("Hello, " + arg + "!");
+                                       ^
+  symbol:   variable arg
+  location: class Hello
+1 error
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+[33m> [39mCompilation failed; see the compiler error output for details.
+
+* Try:
+Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+1 actionable task: 1 executed
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ gradle run --args="Dylan"
+[0m
+
+[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello, [Ljava.lang.String;@4aa298b7!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ gradle run --args="Dylan"
+[0m
+[1A
+[31;1m> Task :compileJava[0;39m[31m FAILED[39m
+/home/huntsmd/csci241/lab-1-Dylan-Hu/src/main/java/lab1/Hello.java:5: error: bad operand type String[] for unary operator '--'
+        System.out.println("Hello, " + --args + "!");
+                                       ^
+1 error
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+[33m> [39mCompilation failed; see the compiler error output for details.
+
+* Try:
+Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+1 actionable task: 1 executed
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@CF165-02:~/csci241/lab-1-Dylan-Hu$ exit
+exit
+
+Script done on Thu 11 Apr 2019 11:39:35 AM PDT
+Script started on Tue 16 Apr 2019 04:58:23 PM PDT
+huntsmd@cf164-03:~$ gradle build
+[0mStarting a Gradle Daemon (subsequent builds will be faster)
+
+
+[2A[1B[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[0K[35D[1B[1m> Loading projects[m[0K[18D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[0K[33D[1B[1m> :buildEnvironment[m[19D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :buildEnvironment[m[19D[1B[2A[0K
+[1m> Task :buildEnvironment[m
+
+[1m------------------------------------------------------------[m
+[1mRoot project[m
+[1m------------------------------------------------------------[m
+
+[32mclasspath[39m
+[33mNo dependencies[39m
+
+A web-based, searchable dependency report is available by adding the [1m--scan[m option.
+
+[32;1mBUILD SUCCESSFUL[0;39m in 3s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :buildEnvironment[m[19D[1B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~$ gradle run
+[0m
+[1A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Task 'run' not found in root project 'huntsmd'.
+
+* Try:
+Run [1mgradle tasks[m to get a list of available tasks. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@cf164-03:~$ cd csci241
+huntsmd@cf164-03:~/csci241$ cd lab-1-Dylan-hu[K[KHu
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ grald[K[Kdle build
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[0K[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m==[0;39;1m-----------> 21% EXECUTING [1s][m[34D[1B[1m> :jar[m[0K[6D[1B[2A[0K
+[32;1mBUILD SUCCESSFUL[0;39m in 1s
+5 actionable tasks: 4 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run
+[0m
+
+[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[31;1m> Task :run[0;39m[31m FAILED[39m
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+        at lab1.Hello.main(Hello.java:5)
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Execution failed for task ':run'.
+[33m> [39mProcess 'command '/usr/lib/jvm/java-8-openjdk-amd64/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ [Khuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle build
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+5 actionable tasks: 4 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ graddle [K[K[K[Kle run
+[0m
+[1A
+[1m> Task :run[m
+Hello, World!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run --args = "Hello"
+[0m
+
+[1A[1m> Connecting to Daemon[m[22D[1B[2A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Task 'Hello' not found in root project 'lab-1-Dylan-Hu'. Some candidates are: 'help'.
+
+* Try:
+
+[0K
+[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B> IDLE[6D[1B[2ARun [1mgradle tasks[m to get a list of available tasks. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ grade[Kle run --agr = 241
+[0m
+[1A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Problem configuring task :run from command line.
+[33m> [39mUnknown command-line option '--agr'.
+
+* Try:
+Run [1mgradle help --task :run[m to get task usage details. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run --agr = 241"241[C[C[C"
+[0m
+[1A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Problem configuring task :run from command line.
+[33m> [39mUnknown command-line option '--agr'.
+
+* Try:
+Run [1mgradle help --task :run[m to get task usage details. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run --agr = "241"[C[1@s
+[0m
+[1A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Problem configuring task :run from command line.
+[33m> [39mUnknown command-line option '--agrs'.
+
+* Try:
+Run [1mgradle help --task :run[m to get task usage details. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run --agrs = "241"[1P[C[C[1P"241"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[0m
+[1A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Problem configuring task :run from command line.
+[33m> [39mUnknown command-line option '--agrs'.
+
+* Try:
+Run [1mgradle help --task :run[m to get task usage details. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run --agrs="241"[1Pagrs="241"[1Pagrs="241"
+[0m
+[1A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Task 'agrs=241' not found in root project 'lab-1-Dylan-Hu'.
+
+* Try:
+Run [1mgradle tasks[m to get a list of available tasks. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run agrs="241"[1P="241"[1P="241"[1P="241"r="241"g="241"s="241"
+[0m
+
+[1A[1m> Connecting to Daemon[m[22D[1B[2A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Task 'args=241' not found in root project 'lab-1-Dylan-Hu'.
+
+* Try:
+Run [1mgradle tasks[m to get a list of available tasks. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> Connecting to Daemon[m[22D[1B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run args="241"[C-args="241"-args="241"
+[0m
+
+[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello, World!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ gradle run --args="241"
+[0m
+
+[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello, 241!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mhuntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git add src/main/java/lab1/he[K[KHello.java
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git commit -m "Hello now prints command line arg"
+[master a446528] Hello now prints command line arg
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git push
+Username for 'https://github.com': Dylan-Hu
+Password for 'https://Dylan-Hu@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 574 bytes | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/CSCI241Spring2019/lab-1-Dylan-Hu.git
+   1d2f13f..a446528  master -> master
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git touch dummy.txt[1P[1P[1P[1P
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git add dummy.txt
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git mv dummy
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git mv dummy test
+fatal: bad source, source=dummy, destination=test
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ mit mv -f dummy test
+No command 'mit' found, but there are 17 similar ones
+mit: command not found
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git mv -f dummy test
+fatal: bad source, source=dummy, destination=test
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git test[K[K[K[K[K[K[K[Kgit mv dummy.txt test.txt
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git reset test.txt
+Unstaged changes after reset:
+M	username.txt
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git add teyp[K[K[Kypescript
+huntsmd@cf164-03:~/csci241/lab-1-Dylan-Hu$ git commit typesc[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on Tue 16 Apr 2019 05:17:39 PM PDT
